@@ -1,0 +1,38 @@
+:root {
+  --base-black: #000;
+  --base-white: #fff;
+  --primary: #cc9c52;
+  --secondary: #f3ebda;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  outline: 0;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Playfair Display", "Sansation";
+  background-color: var(--base-black);
+  color: var(--base-white);
+}
+
+.btn {
+  font-size: 1rem;
+  font-family: "Sansation";
+  font-weight: 600;
+  padding: 16px;
+  color: var(--base-black);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+
+.btn-secondary {
+  color: var(--primary);
+  border: var(--primary) solid 2px;
+}

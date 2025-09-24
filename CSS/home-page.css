@@ -1,0 +1,95 @@
+/* Navbar Design */
+header .container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.9rem 3.1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+header .container-navbar.scrolled {
+  background-color: var(--base-black);
+}
+
+.logo a {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: var(--base-white);
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-size: 1.2rem;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: var(--base-white);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-list a:hover {
+  color: var(--primary);
+}
+
+/* Hero Design */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background-image: url(../Asset/Background-HomePage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2.5rem;
+  box-sizing: border-box;
+}
+
+.hero .content {
+  padding: 1.9rem 3.1rem;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 5.6rem;
+}
+
+.hero .content p {
+  font-family: "Sansation";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+
+.hero .content-btn {
+  padding: 1.9rem 3.1rem;
+  max-width: 60rem;
+  margin: 6vh;
+}
+
+.hero .content-btn a {
+  font-family: "Sansation";
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 1.3rem 1.9rem;
+  transition: background-color 0.5s ease;
+}
+
+.hero .content-btn a:hover {
+  background-color: var(--secondary);
+}
+
+/* Collection Design */
+.collection {
+}

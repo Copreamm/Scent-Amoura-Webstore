@@ -25,7 +25,7 @@ header .container-navbar.scrolled {
 .navbar-list {
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 3.1rem;
   font-size: 1.2rem;
 }
 
@@ -92,4 +92,46 @@ header .container-navbar.scrolled {
 
 /* Collection Design */
 .collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 3.1rem;
+}
+
+.collection h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.collection h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.collection .container-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  max-width: 100%;
+  gap: 2rem;
+}
+
+.collection .box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.collection .box-image {
+  border: var(--secondary) solid 1px;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.collection .box-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

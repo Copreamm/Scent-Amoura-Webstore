@@ -1,3 +1,10 @@
+/* General Design */
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 90rem;
+}
+
 /* Navbar Design */
 header .container-navbar {
   display: flex;
@@ -52,6 +59,7 @@ header .container-navbar.scrolled {
   background-position: center;
   padding-bottom: 2.5rem;
   box-sizing: border-box;
+  max-width: 90rem;
 }
 
 .hero .content {
@@ -74,9 +82,8 @@ header .container-navbar.scrolled {
 }
 
 .hero .content-btn {
-  padding: 1.9rem 3.1rem;
-  max-width: 60rem;
-  margin: 6vh;
+  padding-bottom: 10vh;
+  padding-right: 8vh;
 }
 
 .hero .content-btn a {
@@ -93,10 +100,8 @@ header .container-navbar.scrolled {
 
 /* Collection Design */
 .collection {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 5rem 3.1rem;
+  padding: 5rem 3.1rem;
 }
 
 .collection h1 {
@@ -137,4 +142,47 @@ header .container-navbar.scrolled {
   max-width: 20rem;
   height: auto;
   display: block;
+}
+
+/* About Us Design */
+.about-us {
+  padding: 5rem 3.1rem;
+  justify-content: space-between;
+}
+
+.about-us h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.about-us p {
+  font-family: "Sansation";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+
+.about-us .content-btn {
+  margin-top: 5rem;
+}
+
+.about-us .content-img img {
+  max-width: 35rem;
+  height: auto;
+  display: block;
+}
+
+.about-us .content-btn a {
+  font-family: "Sansation";
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1.3rem 1.9rem;
+  transition: background-color 0.5s ease;
+}
+
+.about-us .content-btn a:hover {
+  background-color: var(--primary);
+  color: var(--base-black);
 }

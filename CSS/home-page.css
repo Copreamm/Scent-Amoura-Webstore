@@ -3,6 +3,48 @@
   display: flex;
   align-items: center;
   max-width: 90rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--secondary);
+  margin: 0;
+}
+
+p {
+  font-family: "Sansation";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+
+.content-btn a {
+  font-family: "Sansation";
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1.3rem 1.9rem;
+}
+
+.content {
+  padding-top: 2rem;
+}
+
+.content-btn {
+  margin-top: 5rem;
+}
+
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.box-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navbar Design */
@@ -18,6 +60,7 @@ header .container-navbar {
   background-color: transparent;
   transition: background-color 0.2s ease;
   max-width: 90rem;
+  margin: 0 auto;
 }
 
 header .container-navbar.scrolled {
@@ -49,6 +92,7 @@ header .container-navbar.scrolled {
 
 /* Hero Design */
 .hero {
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -63,7 +107,7 @@ header .container-navbar.scrolled {
 }
 
 .hero .content {
-  padding: 1.9rem 3.1rem;
+  padding: 1.9rem 0;
   max-width: 60rem;
 }
 
@@ -73,24 +117,12 @@ header .container-navbar.scrolled {
   font-size: 5.6rem;
 }
 
-.hero .content p {
-  font-family: "Sansation";
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  margin-top: 1.5rem;
-}
-
 .hero .content-btn {
   padding-bottom: 10vh;
   padding-right: 8vh;
 }
 
 .hero .content-btn a {
-  font-family: "Sansation";
-  font-weight: 600;
-  font-size: 1.3rem;
-  padding: 1.3rem 1.9rem;
   transition: background-color 0.5s ease;
 }
 
@@ -126,8 +158,6 @@ header .container-navbar.scrolled {
 }
 
 .collection .box-wrap {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
@@ -140,8 +170,6 @@ header .container-navbar.scrolled {
 
 .collection .box-image img {
   max-width: 20rem;
-  height: auto;
-  display: block;
 }
 
 /* About Us Design */
@@ -150,39 +178,100 @@ header .container-navbar.scrolled {
   justify-content: space-between;
 }
 
-.about-us h1 {
-  font-size: 4rem;
-  font-weight: 500;
-  color: var(--secondary);
-}
-
-.about-us p {
-  font-family: "Sansation";
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  margin-top: 1.5rem;
-}
-
-.about-us .content-btn {
-  margin-top: 5rem;
-}
-
 .about-us .content-img img {
   max-width: 35rem;
-  height: auto;
-  display: block;
 }
 
 .about-us .content-btn a {
-  font-family: "Sansation";
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding: 1.3rem 1.9rem;
-  transition: background-color 0.5s ease;
+  transition: background-color 1s ease;
 }
 
 .about-us .content-btn a:hover {
   background-color: var(--primary);
   color: var(--base-black);
+}
+
+/* Recommendation Design */
+.recommendation {
+  padding: 5rem 3.1rem;
+}
+
+.recom-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5rem 3rem;
+  border: var(--primary) solid 0.2rem;
+  border-radius: 0.2rem;
+  gap: 3rem;
+}
+
+.recom-wrap .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 0;
+}
+
+.recom-wrap h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.recom-wrap p {
+  margin-top: 0.8rem;
+}
+
+.recom-wrap .content-btn {
+  margin-top: 3rem;
+}
+
+.recom-wrap .content-btn a {
+  transition: background-color 1s ease;
+}
+
+.recom-wrap .content-btn a:hover {
+  background-color: var(--primary);
+  color: var(--base-black);
+}
+
+.product-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.product-wrap .box-image {
+  border: var(--primary) solid 0.1rem;
+  border-radius: 0.2rem;
+}
+
+.product-wrap .linked {
+  color: var(--base-white);
+}
+
+.product-wrap h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  padding-top: 2rem;
+  color: inherit;
+  transition: color 0.5s ease;
+}
+
+.product-wrap p {
+  color: inherit;
+  transition: color 0.5s ease;
+}
+
+.product-wrap .box-image img {
+  max-width: 15rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-wrap .linked:hover {
+  color: var(--primary);
+}
+
+.product-wrap .linked:hover img {
+  transform: scale(1.03);
 }

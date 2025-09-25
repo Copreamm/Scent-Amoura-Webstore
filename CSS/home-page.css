@@ -10,6 +10,7 @@ header .container-navbar {
   right: 0;
   background-color: transparent;
   transition: background-color 0.2s ease;
+  max-width: 90rem;
 }
 
 header .container-navbar.scrolled {
@@ -111,10 +112,12 @@ header .container-navbar.scrolled {
 
 .collection .container-wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 4rem;
-  max-width: 100%;
-  gap: 2rem;
+  gap: 1rem;
+  max-width: 90rem;
+  width: 100%;
 }
 
 .collection .box-wrap {
@@ -131,7 +134,7 @@ header .container-navbar.scrolled {
 }
 
 .collection .box-image img {
-  max-width: 100%;
+  max-width: 20rem;
   height: auto;
   display: block;
 }

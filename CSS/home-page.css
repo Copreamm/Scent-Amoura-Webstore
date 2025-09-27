@@ -52,7 +52,7 @@ header .container-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.9rem 3.1rem;
+  padding: 1.9rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -98,7 +98,7 @@ header .container-navbar.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  background-image: url(../Asset/Background-HomePage.png);
+  background-image: url(../Asset/Background-HomePagee.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -275,63 +275,4 @@ header .container-navbar.scrolled {
 
 .product-wrap .linked:hover img {
   transform: scale(1.03);
-}
-
-/* Footer Design*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  max-width: 90rem;
-  margin: 0 auto;
-  padding: 5rem 3.1rem 5rem 3.1rem;
-  margin-top: 5rem;
-  background-color: var(--third);
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-content h2 {
-  font-size: 3.2rem;
-  font-weight: 400;
-  color: var(--base-white);
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 3.5rem;
-}
-
-.footer-nav a {
-  font-size: 1.4rem;
-  color: var(--base-white);
-  transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-  color: var(--primary);
-}
-
-.footer p {
-  margin-top: 0.5rem;
-}
-
-.footer-bottom {
-  padding-top: 8rem;
-  text-align: right;
-}
-
-.footer-bottom hr {
-  border: var(--secondary) solid 0.01rem;
-  border-radius: 0.1rem;
-}
-
-.footer-bottom p {
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding-top: 1rem;
 }

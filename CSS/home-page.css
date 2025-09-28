@@ -47,50 +47,6 @@ img {
   flex-direction: column;
 }
 
-/* Navbar Design */
-header .container-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.9rem 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: transparent;
-  transition: background-color 0.2s ease;
-  max-width: 90rem;
-  margin: 0 auto;
-}
-
-header .container-navbar.scrolled {
-  background-color: var(--base-black);
-}
-
-.logo a {
-  font-size: 2.3rem;
-  font-weight: 400;
-  color: var(--base-white);
-}
-
-.navbar-list {
-  list-style: none;
-  display: flex;
-  gap: 3.1rem;
-  font-size: 1.2rem;
-}
-
-.navbar-list a {
-  text-decoration: none;
-  color: var(--base-white);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.navbar-list a:hover {
-  color: var(--primary);
-}
-
 /* Hero Design */
 .hero {
   margin: 0 auto;

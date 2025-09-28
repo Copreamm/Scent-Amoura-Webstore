@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".container-navbar");
+  const navbar = document.querySelector("header");
   const jarakScroll = 20;
 
   if (window.scrollY > jarakScroll) {

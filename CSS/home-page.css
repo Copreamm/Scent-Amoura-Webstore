@@ -120,6 +120,12 @@ img {
 }
 
 .collection .box-image {
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
   border: var(--secondary) solid 1px;
   border-radius: 0.2rem;
   padding: 0.5rem;
@@ -158,6 +164,12 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   padding: 5rem 3rem;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
   border: var(--primary) solid 0.2rem;
   border-radius: 0.2rem;
   gap: 3rem;

@@ -161,23 +161,21 @@ img {
 
 /* Recommendation Design */
 .recommendation {
-  padding: 9rem 2rem;
-  box-sizing: border-box;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
   padding-left: 2rem;
   padding-right: 2rem;
   max-width: 90rem;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .recom-wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 5px;
-  padding-top: 5rem;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 5rem;
+  gap: 3rem;
+  padding: 5rem 3rem;
   max-width: 90rem;
   border: var(--primary) solid 0.2rem;
   border-radius: 0.2rem;
@@ -195,8 +193,8 @@ img {
   flex-direction: column;
   gap: 1rem;
   padding-top: 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0;
+  padding-right: 0;
   box-sizing: border-box;
 }
 

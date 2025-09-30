@@ -52,10 +52,6 @@ header {
   right: 0;
   z-index: 1000;
   background-color: transparent;
-  transition: background-color 0.2s ease;
-}
-
-header.scrolled {
   background-color: var(--base-black);
 }
 
@@ -66,6 +62,12 @@ header .container-navbar {
   max-width: 90rem;
   margin: 0 auto;
   padding: 1.9rem 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
 }
 
 .logo a {
@@ -83,22 +85,29 @@ header .container-navbar {
 }
 
 .navbar-list a,
-.navbar-list i {
+.icon-list a {
   color: var(--base-white);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-list a:hover,
-.navbar-list i:hover {
+.icon-list a:hover {
   color: var(--primary);
-}
-
-.navbar-list i {
-  font-size: 1.4rem;
 }
 
 .icon-list {
   display: flex;
   gap: 1.9rem;
+  align-items: center;
+}
+
+.icon-list i {
+  font-size: 1.4rem;
+}
+
+.menu-icon {
+  font-size: 1.4rem;
+  display: none;
 }
 
 /* Footer Design*/
@@ -161,4 +170,33 @@ header .container-navbar {
   font-size: 1.3rem;
   font-weight: 300;
   padding-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  header .container-navbar {
+    padding: 1.5rem 2rem;
+    background-color: var(--base-black);
+  }
+
+  .navbar-list {
+    display: none;
+
+    /* position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background: var(--base-black);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5; */
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
 }

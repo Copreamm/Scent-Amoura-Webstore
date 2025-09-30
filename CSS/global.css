@@ -181,10 +181,9 @@ nav {
 
   .navbar-list {
     display: none;
-
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-    }
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
   }
 }

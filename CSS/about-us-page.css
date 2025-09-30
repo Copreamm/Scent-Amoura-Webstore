@@ -39,6 +39,9 @@ img {
   background-size: cover;
   background-position: center;
   max-width: 90rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .hero .content {
@@ -52,6 +55,9 @@ img {
   margin: 0 auto;
   border-top: var(--primary) solid 0.1rem;
   border-bottom: var(--primary) solid 0.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .reason {
@@ -102,6 +108,9 @@ img {
   padding-top: 6rem;
   max-width: 90rem;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .banner-box {
@@ -144,6 +153,9 @@ img {
   padding: 7rem 0;
   max-width: 90rem;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .perks-benefits h1 {

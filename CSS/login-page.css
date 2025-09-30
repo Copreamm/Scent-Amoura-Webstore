@@ -15,6 +15,9 @@ body {
   max-width: 90rem;
   margin: 0 auto;
   padding: 1.5rem 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .back-button a {
@@ -47,6 +50,9 @@ body {
   box-shadow: 0 0.5rem 1rem var(--secondary);
   width: 30rem;
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .logo {

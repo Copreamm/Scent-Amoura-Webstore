@@ -1,4 +1,14 @@
 /* General Design */
+.container,
+.hero,
+.collection .container-wrap,
+.recom-wrap,
+.about-us {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -98,7 +108,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.1rem;
   width: 100%;
   max-width: 90rem;
   margin-top: 4rem;
@@ -108,7 +118,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .collection .box-image {
@@ -131,6 +141,9 @@ img {
 .about-us {
   padding: 5rem 0;
   justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .about-us .content-img img {
@@ -148,7 +161,8 @@ img {
 
 /* Recommendation Design */
 .recommendation {
-  padding: 9rem 0;
+  padding: 9rem 2rem;
+  box-sizing: border-box;
 }
 
 .recom-wrap {
@@ -165,6 +179,9 @@ img {
     rgba(0, 0, 0, 0.9) 40%,
     rgba(0, 0, 0, 1) 100%
   );
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .recom-wrap .content {
@@ -229,4 +246,109 @@ img {
 
 .product-wrap .linked:hover img {
   transform: scale(1.03);
+}
+
+/* Laptop (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .hero .content h1 {
+    font-size: 4.5rem;
+  }
+
+  .collection .container-wrap {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .recom-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .hero .content {
+    max-width: 100%;
+  }
+
+  .hero .content h1 {
+    font-size: 3.8rem;
+  }
+
+  .collection .container-wrap {
+    justify-content: center;
+  }
+
+  .product-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Tablet kecil / HP besar (max-width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero .content h1 {
+    font-size: 3.2rem;
+  }
+
+  .collection .box-image img {
+    max-width: 15rem;
+  }
+
+  .product-wrap .box-image img {
+    max-width: 12rem;
+  }
+}
+
+/* HP kecil (max-width: 576px) */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-btn {
+    margin-top: 3rem;
+  }
+
+  .content-btn a {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .collection .box-image img,
+  .product-wrap .box-image img {
+    max-width: 100%;
+  }
+
+  .recom-wrap {
+    padding: 2rem 1rem;
+  }
 }

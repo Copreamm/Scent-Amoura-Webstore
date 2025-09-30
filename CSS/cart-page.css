@@ -18,6 +18,9 @@ body {
   padding: 6rem 3rem 4rem 3rem;
   width: 100%;
   min-height: 100vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .back-button {
@@ -25,6 +28,10 @@ body {
   max-width: 90rem;
   margin: 0 auto;
   padding: 2rem 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  background-color: transparent;
 }
 
 .back-button a {
@@ -55,6 +62,9 @@ body {
   border-radius: 0.6rem;
   background: var(--base-white);
   box-shadow: 0 0.5rem 1rem var(--secondary);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .cart-header {

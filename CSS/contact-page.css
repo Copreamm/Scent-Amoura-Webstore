@@ -39,6 +39,9 @@ img {
   background-size: cover;
   background-position: center;
   border-bottom: var(--primary) solid 0.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .hero .content {
@@ -54,6 +57,9 @@ img {
   max-width: 90rem;
   margin: 0 auto;
   padding: 7rem 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .content h1 {
@@ -114,6 +120,9 @@ img {
   max-width: 90rem;
   margin: 0 auto;
   padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .banner-box {

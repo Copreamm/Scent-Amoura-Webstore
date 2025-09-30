@@ -6,24 +6,29 @@
   --third: #202020;
 }
 
+/* Global Design */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: none;
-  outline: 0;
-  border: none;
-  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Playfair Display", "Sansation";
+  font-family: "Playfair Display", "Sansation", sans-serif;
   background-color: var(--base-black);
   color: var(--base-white);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Btn Design */
 .btn {
   font-size: 1rem;
-  font-family: "Sansation";
+  font-family: "Sansation", sans-serif;
   font-weight: 600;
   padding: 1.9rem 3.1rem;
   color: var(--base-black);
@@ -50,17 +55,17 @@ header {
   transition: background-color 0.2s ease;
 }
 
+header.scrolled {
+  background-color: var(--base-black);
+}
+
 header .container-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.9rem 0;
   max-width: 90rem;
   margin: 0 auto;
-}
-
-header.scrolled {
-  background-color: var(--base-black);
+  padding: 1.9rem 0;
 }
 
 .logo a {
@@ -70,28 +75,16 @@ header.scrolled {
 }
 
 .navbar-list {
-  list-style: none;
   display: flex;
   align-items: center;
   gap: 3.1rem;
+  list-style: none;
   font-size: 1.2rem;
 }
 
-.navbar-list a {
-  text-decoration: none;
-  color: var(--base-white);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
+.navbar-list a,
 .navbar-list i {
-  font-size: 1.4rem;
   color: var(--base-white);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.icon-list {
-  display: flex;
-  gap: 1.9rem;
 }
 
 .navbar-list a:hover,
@@ -99,15 +92,27 @@ header.scrolled {
   color: var(--primary);
 }
 
+.navbar-list i {
+  font-size: 1.4rem;
+}
+
+.icon-list {
+  display: flex;
+  gap: 1.9rem;
+}
+
 /* Footer Design*/
+.site-footer {
+  background-color: var(--third);
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   max-width: 90rem;
   margin: 0 auto;
-  padding: 5rem 3.1rem 5rem 3.1rem;
+  padding: 5rem 0;
   margin-top: 5rem;
-  background-color: var(--third);
 }
 
 .footer-content {
@@ -154,6 +159,6 @@ header.scrolled {
 
 .footer-bottom p {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   padding-top: 1rem;
 }

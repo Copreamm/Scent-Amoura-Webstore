@@ -13,7 +13,7 @@ h1 {
 }
 
 p {
-  font-family: "Sansation";
+  font-family: "Sansation", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -21,19 +21,19 @@ p {
 }
 
 img {
-  height: auto;
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /* Hero Design */
 .hero {
-  margin: 0 auto;
-  min-height: 50vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  margin: 0 auto;
   background-image: url(../Asset/Background-AboutPage.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,11 +47,11 @@ img {
 
 /* Reason Design */
 .line {
-  border-top: var(--primary) solid 0.1rem;
-  border-bottom: var(--primary) solid 0.1rem;
   width: 100%;
   max-width: 95rem;
   margin: 0 auto;
+  border-top: var(--primary) solid 0.1rem;
+  border-bottom: var(--primary) solid 0.1rem;
 }
 
 .reason {
@@ -77,7 +77,7 @@ img {
   width: 1px;
   height: 50%;
   background-color: var(--secondary);
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .reason-box i {
@@ -96,30 +96,27 @@ img {
   margin-top: 1rem;
 }
 
-.banner {
-  padding: 5rem 0;
-}
-
 /* Banner Page Design */
 .banner {
-  padding-top: 7rem;
-  max-width: 90rem;
   display: flex;
+  padding-top: 6rem;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .banner-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+  border: var(--secondary) solid 0.2rem;
+  border-radius: 0.5rem;
   background: linear-gradient(
     180deg,
     rgba(32, 32, 32, 1) 0%,
     rgba(0, 0, 0, 0.9) 40%,
     rgba(0, 0, 0, 1) 100%
   );
-  border: var(--secondary) solid 0.2rem;
-  border-radius: 0.5rem;
-  gap: 2rem;
 }
 
 .content-img {
@@ -141,11 +138,12 @@ img {
 
 /* Benefits Page Design */
 .perks-benefits {
-  padding: 5rem 0;
-  max-width: 90rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding: 7rem 0;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .perks-benefits h1 {
@@ -155,44 +153,44 @@ img {
 .benefit-wrap {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
   align-items: center;
+  gap: 3rem;
 }
 
 .box-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 4rem 2rem;
+  border: var(--secondary) solid 0.05rem;
+  border-radius: 0.2rem;
   background: linear-gradient(
     180deg,
     rgba(32, 32, 32, 1) 0%,
     rgba(0, 0, 0, 0.9) 40%,
     rgba(0, 0, 0, 1) 100%
   );
-  border: var(--secondary) solid 0.05rem;
-  border-radius: 0.2rem;
-  padding: 4rem 2rem;
-  align-items: center;
-  text-align: center;
-  gap: 0.5rem;
 }
 
 .box-wrap i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
   font-size: 2.4rem;
   color: var(--primary);
   border: var(--primary) solid 0.1rem;
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .box-wrap h2 {
   font-size: 1.9rem;
   font-weight: 400;
-  padding-top: 1rem;
   color: var(--primary);
+  padding-top: 1rem;
 }
 
 .box-wrap p {

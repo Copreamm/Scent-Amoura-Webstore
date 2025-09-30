@@ -13,7 +13,7 @@ h1 {
 }
 
 p {
-  font-family: "Sansation";
+  font-family: "Sansation", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -28,12 +28,12 @@ img {
 
 /* Hero Design */
 .hero {
-  margin: 0 auto;
-  min-height: 50vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  margin: 0 auto;
   background-image: url(../Asset/Background-ContactPage.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,12 +48,12 @@ img {
 
 /* Contact Page Design */
 .contact {
-  padding: 7rem 0;
-  max-width: 90rem;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 7rem 0;
 }
 
 .contact h1 {
@@ -69,39 +69,39 @@ img {
 }
 
 .box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  border: var(--secondary) solid 0.05rem;
+  border-radius: 0.2rem;
   background: linear-gradient(
     180deg,
     rgba(32, 32, 32, 1) 0%,
     rgba(0, 0, 0, 0.9) 40%,
     rgba(0, 0, 0, 1) 100%
   );
-  border: var(--secondary) solid 0.05rem;
-  border-radius: 0.2rem;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
 }
 
 .box-wrap i {
-  font-size: 2.4rem;
-  color: var(--primary);
-  border: var(--primary) solid 0.1rem;
-  border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.4rem;
+  color: var(--primary);
+  border: var(--primary) solid 0.1rem;
+  border-radius: 0.5;
 }
 
 .box-wrap h2 {
   font-size: 1.9rem;
   font-weight: 400;
-  padding-top: 1rem;
   color: var(--primary);
+  padding-top: 1rem;
 }
 
 .box-wrap p {
@@ -111,8 +111,9 @@ img {
 
 /* Banner Page Design */
 .banner {
-  max-width: 90rem;
   display: flex;
+  max-width: 90rem;
+  margin: 0 auto;
   padding-bottom: 5rem;
 }
 
@@ -120,10 +121,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 2rem;
-  background-color: var(--primary);
-  border-radius: 0.5rem;
+  gap: 2rem;
   width: 100%;
+  padding: 5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  text-align: center;
 }
 
 .banner-box h2 {
@@ -133,7 +136,6 @@ img {
 
 .banner-box p {
   font-size: 2rem;
-  text-align: center;
 }
 
 .btn-wrap {
@@ -141,21 +143,20 @@ img {
 }
 
 .btn {
-  font-family: "Sansation";
+  font-family: "Sansation", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   padding: 1rem 2rem;
   color: var(--base-white);
-  transition: color 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .btn-secondary {
   border-color: var(--base-white);
-  transition: color 0.5s ease;
 }
 
 .btn-secondary:hover {
   background-color: var(--secondary);
   color: var(--base-black);
-  border: var(--secondary) solid 0.1rem;
+  border-color: var(--secondary);
 }

@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-  font-family: "Sansation";
+  font-family: "Sansation", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -22,39 +22,40 @@ p {
 }
 
 img {
-  height: auto;
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .btn {
-  font-family: "Sansation";
+  font-family: "Sansation", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   padding: 0.8rem 1.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Hero Design */
 .hero {
-  margin: 0 auto;
-  min-height: 100vh;
-  width: 100%;
+  position: relative;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90rem;
+  min-height: 100vh;
   background-image: url(../Asset/Background-ShopPage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  max-width: 90rem;
 }
 
 .hero::after {
   content: "";
-  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 1;
   background: linear-gradient(
     0deg,
@@ -68,31 +69,32 @@ img {
 .hero .content {
   position: relative;
   z-index: 2;
-  padding-bottom: 5rem;
   width: 100%;
+  padding-bottom: 5rem;
 }
 
 .hero .content h1 {
-  color: var(--secondary);
-  font-weight: 500;
   font-size: 5.4rem;
+  font-weight: 500;
+  color: var(--secondary);
 }
 
 /* Shop Container Design */
 .shop-wrap {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 5rem 0;
   max-width: 90rem;
+  padding: 5rem 0;
 }
 
 .shop-wrap hr {
-  border: var(--secondary) solid 0.01rem;
-  border-radius: 0.1rem;
   width: 100%;
   margin-bottom: 1rem;
-  opacity: 50%;
+  border: var(--secondary) solid 0.01rem;
+  border-radius: 0.1rem;
+  opacity: 0.5;
 }
 
 .up-bar {
@@ -126,9 +128,7 @@ img {
   border: none;
   outline: none;
   background: transparent;
-  font-family: "Sansation";
-  font-weight: 600;
-  font-size: 1.2rem;
+  font: 600 1.2rem "Sansation", sans-serif;
   color: inherit;
   opacity: 25%;
 }
@@ -137,32 +137,30 @@ img {
   color: inherit;
 }
 
-.btn-search .btn:hover {
-  background-color: var(--secondary);
+.btn-search .btn {
+  background-color: var(--primary);
 }
 
-.btn-search .btn {
-  cursor: pointer;
-  background-color: var(--primary);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+.btn-search .btn:hover {
+  background-color: var(--secondary);
 }
 
 /* Product Page Design */
 .shop-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  flex-wrap: wrap;
+  padding: 6rem;
+  border: 1px solid rgba(243, 235, 218, 0.5);
+  border-radius: 0.5rem;
   background: linear-gradient(
     180deg,
     rgba(32, 32, 32, 1) 0%,
     rgba(0, 0, 0, 0.9) 40%,
     rgba(0, 0, 0, 1) 100%
   );
-  border: 1px solid rgba(243, 235, 218, 0.5);
-  border-radius: 0.5rem;
-  padding: 6rem;
 }
 
 .box-wrap {
@@ -172,9 +170,9 @@ img {
 }
 
 .box-image {
+  padding: 2rem;
   border: var(--secondary) solid 0.05rem;
   border-radius: 0.2rem;
-  padding: 2rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -204,26 +202,19 @@ img {
 
 .box-image:hover {
   border: var(--primary) solid 0.05rem;
-  border-radius: 0.2rem;
 }
 
-.box-wrap .hover-container:hover {
+.hover-container:hover {
   color: var(--primary);
 }
 
-.box-wrap .hover-container:hover img {
+.hover-container:hover img {
   transform: scale(1.03);
 }
 
 .btn-wrap {
   display: flex;
   gap: 1rem;
-}
-
-.btn-primary,
-.btn-secondary {
-  transition: color 0.5s ease;
-  transition: background-color 0.5s ease;
 }
 
 .btn-wrap .btn-secondary:hover {
@@ -238,19 +229,19 @@ img {
 
 /* Banner Page Design */
 .banner {
-  padding: 4rem 0;
-  max-width: 90rem;
   display: flex;
+  max-width: 90rem;
+  padding: 4rem 0;
 }
 
 .banner-box {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  background-color: var(--primary);
-  border-radius: 0.5rem;
+  justify-content: space-between;
   gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
 }
 
 .content-img {
